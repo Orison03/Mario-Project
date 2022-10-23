@@ -29,8 +29,7 @@ header h1{
 }
 
 .banner img{
-    max-width: 100%;
-    margin-bottom: 0;
+    width: 100%;
 }
 
 .banner .welcome{
@@ -323,7 +322,13 @@ form input:invalid{
 @media (max-width: 557px){
     .banner{
     position: relative;
-}
+    height: 300px;
+    }
+
+    .banner img{
+        height: 100%;
+        object-fit: fill;
+    }
 
     .banner h2{
         font-size: 17px;
@@ -339,15 +344,19 @@ form input:invalid{
      }
      
      .banner .welcome{
-    position: static;
+    /* position: static; */
+    display: none;
     background-color: orange;
     /* width: 100%; */
-    margin-top: -7px;
+    margin-top: -6.5px;
     text-align: center;
     font-size: 22px;
     padding: 20px 5px;
-
 }
+
+    header{
+        display: static;
+    }
 
     article h2{
     font-size: 35px;
