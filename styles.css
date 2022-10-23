@@ -173,14 +173,14 @@ nav li a:hover{
 form input:focus{
   border: none;
 }
-
+/* 
 form input:valid{
   border-color: green;
 }
 
 form input:invalid{
   border-color: red;
-}
+} */
 
 @media screen and (max-width: 1400px){
 
