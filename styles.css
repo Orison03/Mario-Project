@@ -12,8 +12,8 @@ header{
     position: fixed;
     width: 100%;
     z-index: 1;
-    left: 0;
-    top: 0;
+    /* left: 0;
+    top: 0; */
 }
 
 header h1{
@@ -41,13 +41,15 @@ header h1{
 }
 
 .banner h2{
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     text-transform: capitalize;
     font-weight: bold;
+    font-size: 32px;
+    color: white;
 }
 
 .banner h2 span{
-    font-size: 1.3em;
+    font-size: 1.7em;
     letter-spacing: 2px;
     font-weight: bold;
 }
@@ -69,7 +71,7 @@ nav ul{
 nav li{
     width: 25%;
     display: inline-block;
-    font-size: 24px;
+    font-size: 22px;
 }
 nav li a{
     text-decoration: none;
@@ -84,8 +86,9 @@ nav li #join{
 
 main{
     max-width: 100%;
-    width: 1000px;
+    /* width: 100px; */
     margin: 60px auto;
+    width: 90%;
 }
 
 article h2{
@@ -179,213 +182,77 @@ form input:invalid{
   border-color: red;
 }
 
-@media (max-width: 1400px){
-     .banner h2{
-        font-size: 40px;
-        color: white;
-     }
+@media screen and (max-width: 1400px){
 
-     .banner h2 span{
-        letter-spacing: 5px;
-     }
+  .banner .welcome{
+    font-size: 40px;
+  }
 
-     .main-nav ul{
-        margin-left: 13%;
-     }
 }
 
-@media (max-width: 967px){
-    .banner h2{
-        font-size: 27px;
-        color: white;
-     }
-    
-    article h2{
-    font-size: 35px;
-    letter-spacing: 2px;
-    }
+@media screen and (max-width: 960px){
 
-    main{
-        width: 80%;
-    }
+  .banner .welcome{
+    font-size: 28px;
+  }
+  nav li{
+    font-size: 18px;
+  }
+
 }
 
-@media (max-width: 852px){
-    .banner h2{
-        font-size: 23px;
-        color: white;
-     }
-    
-    article h2{
-    font-size: 35px;
-    letter-spacing: 2px;
-    }
+@media screen and (max-width: 700px){
 
-    main{
-        width: 80%;
-    }
-
-    nav li{
-        font-size: 19px;
-    }
-
-    .join{
-        padding: 20px 20px;
-    }
-}
-
-@media (max-width: 760px){
-    .banner h2{
-        font-size: 23px;
-        color: white;
-     }
-    
-    article h2{
-    font-size: 35px;
-    letter-spacing: 2px;
-    }
-
-    main{
-        width: 80%;
-    }
-
-    nav li{
-        font-size: 19px;
-    }
-
-    .join{
-        padding: 20px 20px;
-    }
-
-    /* .banner .welcome{
-    position: absolute;
-    top: 43%;
-    left: 0;
-    padding: 30px;
-    background-color: orange;
-} */
-
-.images li{
-    display: block;
-    width: 100%;
-    margin: 20px 0;
-    transition: all .2s linear;
-}
-
-.images li img{
-    max-width: 100%;
-}
-}
-@media (max-width: 760px){
-    .banner h2{
-        font-size: 20px;
-        color: white;
-     }
-    
-    article h2{
-    font-size: 35px;
-    letter-spacing: 2px;
-    }
-
-    main{
-        width: 80%;
-    }
-
-    nav li{
-        font-size: 14px;
-    }
-
-    .join{
-        padding: 20px 20px;
-    }
-
-    .banner .welcome{
-    position: absolute;
-    top: 43%;
-    left: 0;
-    padding: 30px;
-    background-color: orange;
-}
-
-.images li{
-    display: block;
-    width: 100%;
-    margin: 20px 0;
-    transition: all .2s linear;
-}
-
-.images li img{
-    max-width: 100%;
-}
-}
-
-@media (max-width: 557px){
-    .banner{
+  .banner .welcome{
+    font-size: 20px;
     position: relative;
-    height: 300px;
-    }
-
-    .banner img{
-        height: 100%;
-        object-fit: fill;
-    }
-
-    .banner h2{
-        font-size: 17px;
-        color: white;
-     }
-
-     .banner h2 span{
-        font-size: 17px;
-     }
-
-     .banner h2 br{
-        display: none;
-     }
-     
-     .banner .welcome{
-    /* position: static; */
-    display: none;
-    background-color: orange;
-    /* width: 100%; */
-    margin-top: -6.5px;
     text-align: center;
-    font-size: 22px;
-    padding: 20px 5px;
+  }
+  .banner .welcome br{
+    display: none;
+  }
+  .banner .welcome span{
+    font-size: 1em;
+  }
+  nav li{
+    font-size: 18px;
+  }
+  .images li{
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+
 }
 
-    header{
-        display: static;
-    }
+@media screen and (max-width: 560px){
 
-    article h2{
-    font-size: 35px;
-    letter-spacing: 2px;
-    }
-
-    main{
-        width: 80%;
-    }
-
-    nav li{
-        width: 25%;
-        display: block;
-        font-size: 24px;
-        margin: 10px 0;
-    }
-
-    .join{
-        padding: 20px 20px;
-    }
-
-.images li{
+  .banner .welcome{
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+  }
+  .banner .welcome br{
+    display: none;
+  }
+  .banner .welcome span{
+    font-size: 1em;
+  }
+  nav li{
     display: block;
     width: 100%;
-    margin: 20px 0;
-    transition: all .2s linear;
-}
+    margin: 12px 0;
+  }
+  article h2{
+    font-size: 36px;
+  }
+  header, nav{
+    position: relative;
+    top: 0;
+  }
+  
+  nav{
+    position: sticky;
+  }
 
-.images li img{
-    max-width: 100%;
-}
 }
